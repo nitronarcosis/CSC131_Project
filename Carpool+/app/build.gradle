@@ -28,5 +28,14 @@ dependencies {
 }
 
 dependencies {
+    compile 'com.android.support:design:23.+'
+}
+dependencies {
+    compile 'com.android.support:design:23.+'
+}
+dependencies {
+    compile 'com.android.support:design:23.+'
+}
+dependencies {
     compile 'com.facebook.android:facebook-android-sdk:4.6.0'
 }
