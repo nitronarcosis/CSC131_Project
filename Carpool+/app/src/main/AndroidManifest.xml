@@ -28,9 +28,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Profile"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            >
+        </activity>
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="@string/title_activity_editprofile"
+            >
+        </activity>
+
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            >
         </activity>
     </application>
 

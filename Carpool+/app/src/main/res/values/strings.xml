@@ -3,6 +3,9 @@
 
     <string name="facebook_app_id">522577651251136</string>
     <string name="action_settings">Settings</string>
+    <string name="action_profile">Edit Profile</string>
     <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_editprofile">Edit Profile</string>
+    <string name="title_activity_search">Search</string>
     <string name="section_format">Hello World from section: %1$d</string>
 </resources>

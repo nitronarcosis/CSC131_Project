@@ -1,12 +1,20 @@
 package com.ryantlong.carpool;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.facebook.AccessToken;
+import com.facebook.FacebookActivity;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookContentProvider;
+import com.facebook.FacebookDialog;
 import com.facebook.FacebookSdk;
+import com.facebook.Profile;
 import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginResult;
 
 public class Login extends AppCompatActivity {
 
@@ -38,12 +46,16 @@ public class Login extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     protected void onResume() {
         super.onResume();
 
         // Logs 'install' and 'app activate' App Events.
         AppEventsLogger.activateApp(this);
+
+        if (AccessToken.getCurrentAccessToken() == null)
+            startActivity(new Intent(Login.this, ProfileActivity.class));
     }
     @Override
     protected void onPause() {
