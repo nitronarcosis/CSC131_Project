@@ -1,5 +1,6 @@
 package com.ryantlong.carpool;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -24,7 +25,7 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     public void Search(View view) {
-        setContentView(layout.activity_search);
+        startActivity(new Intent(this, SearchResultsActivity.class));
     }
 
 

@@ -18,6 +18,12 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider522577651251136"
+            android:exported="true" />
+
         <activity
             android:name=".Login"
             android:label="@string/app_name" >
@@ -29,19 +35,28 @@
         </activity>
         <activity
             android:name=".ProfileActivity"
-            android:label="@string/title_activity_profile"
-            >
+            android:label="@string/title_activity_profile" >
         </activity>
         <activity
             android:name=".EditProfileActivity"
-            android:label="@string/title_activity_editprofile"
-            >
+            android:label="@string/title_activity_editprofile" >
         </activity>
-
         <activity
             android:name=".SearchActivity"
-            android:label="@string/title_activity_search"
-            >
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name=".EULAActivity"
+            android:label="EULA" >
+        </activity>
+        <activity
+            android:name=".SearchResultsActivity"
+            android:label="Search Results" >
+        </activity>
+        <activity
+            android:name=".ViewProfileActivity"
+            android:label="@string/title_activity_view_profile"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 
