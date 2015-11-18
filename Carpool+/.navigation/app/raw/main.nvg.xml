@@ -22,6 +22,14 @@
     <statePointEntry>
       <state      
         class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ryantlong.carpool.EditProfileActivity"/>
+      <point      
+        x = "1616"      
+        y = "-396"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
         className = "com.ryantlong.carpool.SearchActivity"/>
       <point      
         x = "2676"      

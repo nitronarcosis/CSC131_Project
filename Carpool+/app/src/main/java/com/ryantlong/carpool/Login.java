@@ -7,16 +7,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.facebook.AccessToken;
-import com.facebook.FacebookActivity;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookContentProvider;
-import com.facebook.FacebookDialog;
+import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
-import com.facebook.Profile;
 import com.facebook.appevents.AppEventsLogger;
-import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 
 public class Login extends AppCompatActivity {
+
+    private LoginButton loginButton;
+    private CallbackManager callbackManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +53,8 @@ public class Login extends AppCompatActivity {
         // Logs 'install' and 'app activate' App Events.
         AppEventsLogger.activateApp(this);
 
-        if (AccessToken.getCurrentAccessToken() == null)
-            startActivity(new Intent(Login.this, ProfileActivity.class));
+       if (AccessToken.getCurrentAccessToken() == null)
+          startActivity(new Intent(Login.this, ProfileActivity.class));
     }
     @Override
     protected void onPause() {
@@ -63,5 +62,9 @@ public class Login extends AppCompatActivity {
 
         // Logs 'app deactivate' App Event.
         AppEventsLogger.deactivateApp(this);
+    }
+
+    public void onClick(){
+
     }
 }
