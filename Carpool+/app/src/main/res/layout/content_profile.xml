@@ -10,7 +10,7 @@
     tools:showIn="@layout/activity_profile" tools:context="com.ryantlong.carpool.ProfileActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/user_pic"
         android:layout_width="@dimen/com_facebook_profilepictureview_preset_size_normal"
         android:layout_height="@dimen/com_facebook_profilepictureview_preset_size_normal"
         android:layout_alignParentLeft="true"
@@ -19,26 +19,26 @@
         android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
 
     <TextView
-        android:id="@+id/editText"
+        android:id="@+id/uname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="39dp"
         android:layout_marginStart="39dp"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/user_pic"
+        android:layout_toRightOf="@+id/user_pic"
         android:ems="10"
         android:enabled="true"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="" />
 
     <TextView
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/uname"
+        android:layout_alignStart="@+id/uname"
+        android:layout_below="@+id/user_pic"
         android:ems="10"
         android:enabled="true"
         android:inputType="textPostalAddress"
@@ -48,9 +48,9 @@
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/uname"
+        android:layout_alignStart="@+id/uname"
+        android:layout_below="@+id/uname"
         android:ems="10"
         android:enabled="true"
         android:inputType="textEmailAddress"
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView"
+            android:layout_below="@+id/user_pic"
             android:checked="false"
             android:enabled="false"
             android:text="Driver" />
