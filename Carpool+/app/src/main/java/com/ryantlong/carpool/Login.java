@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -24,15 +25,20 @@ import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
 public class Login extends AppCompatActivity {
-    CallbackManager callbackManager;
-    LoginButton loginButton;
+    private TextView info;
+    private CallbackManager callbackManager;
+    private LoginButton loginButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(getApplicationContext());
+
+        callbackManager = CallbackManager.Factory.create();
+
         setContentView(R.layout.activity_login);
 
         callbackManager = CallbackManager.Factory.create();
+        loginButton = (LoginButton)findViewById(R.id.login_button);
 
         LoginManager.getInstance().registerCallback(callbackManager,
                 new FacebookCallback<LoginResult>() {
@@ -53,6 +59,11 @@ public class Login extends AppCompatActivity {
                 });
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        callbackManager.onActivityResult(requestCode, resultCode, data);
+    }
 
     public View onCreateView(
             LayoutInflater inflater,
@@ -115,8 +126,8 @@ public class Login extends AppCompatActivity {
         // Logs 'install' and 'app activate' App Events.
         AppEventsLogger.activateApp(this);
 
-        //if (AccessToken.getCurrentAccessToken() == null)
-            //startActivity(new Intent(Login.this, EULAActivity.class));
+        if (AccessToken.getCurrentAccessToken() != null)
+            startActivity(new Intent(Login.this, EULAActivity.class));
     }
     @Override
     protected void onPause() {
