@@ -21,7 +21,11 @@
 
         <provider
             android:name="com.facebook.FacebookContentProvider"
+<<<<<<< HEAD
             android:authorities="com.facebook.FacebookContentProvider522577651251136"
+=======
+            android:authorities="com.facebook.app.FacebookContentProvider522577651251136"
+>>>>>>> origin/master
             android:exported="true" />
 
         <activity
@@ -45,7 +49,22 @@
             android:name=".SearchActivity"
             android:label="@string/title_activity_search" >
         </activity>
+<<<<<<< HEAD
         <activity android:name=".DisclaimerActivity" >
+=======
+        <activity
+            android:name=".EULAActivity"
+            android:label="EULA" >
+        </activity>
+        <activity
+            android:name=".SearchResultsActivity"
+            android:label="Search Results" >
+        </activity>
+        <activity
+            android:name=".ViewProfileActivity"
+            android:label="@string/title_activity_view_profile"
+            android:theme="@style/AppTheme.NoActionBar" >
+>>>>>>> origin/master
         </activity>
     </application>
 

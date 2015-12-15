@@ -58,7 +58,8 @@
         android:src="@drawable/abc_ic_search_api_mtrl_alpha"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="Search"/>
 
     <TextView
         android:layout_width="wrap_content"

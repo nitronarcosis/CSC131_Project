@@ -36,9 +36,21 @@ public class ProfileActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_profile, menu);
         return true;
     }
-    public boolean editMenu(MenuItem Item) {
-        startActivity(new Intent(this, EditProfileActivity.class));
-        return true;
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_profile) {
+            startActivity(new Intent(ProfileActivity.this, EditProfileActivity.class));
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }

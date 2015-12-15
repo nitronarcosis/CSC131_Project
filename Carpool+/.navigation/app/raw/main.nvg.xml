@@ -6,6 +6,14 @@
     <statePointEntry>
       <state      
         class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ryantlong.carpool.SearchResultsActivity"/>
+      <point      
+        x = "3456"      
+        y = "264"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
         className = "com.ryantlong.carpool.Profile"/>
       <point      
         x = "4004"      
@@ -14,10 +22,26 @@
     <statePointEntry>
       <state      
         class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ryantlong.carpool.EULAActivity"/>
+      <point      
+        x = "1076"      
+        y = "224"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
         className = "com.facebook.FacebookActivity"/>
       <point      
-        x = "3700"      
-        y = "192"/>
+        x = "896"      
+        y = "220"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.ryantlong.carpool.EditProfileActivity"/>
+      <point      
+        x = "1804"      
+        y = "-1092"/>
     </statePointEntry>
     <statePointEntry>
       <state      
@@ -32,16 +56,16 @@
         class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
         className = "com.ryantlong.carpool.SearchActivity"/>
       <point      
-        x = "2676"      
-        y = "208"/>
+        x = "2660"      
+        y = "272"/>
     </statePointEntry>
     <statePointEntry>
       <state      
         class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
         className = "com.ryantlong.carpool.ProfileActivity"/>
       <point      
-        x = "1620"      
-        y = "248"/>
+        x = "1864"      
+        y = "272"/>
     </statePointEntry>
     <statePointEntry>
       <state      
